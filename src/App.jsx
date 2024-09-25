@@ -1,7 +1,6 @@
 import React from "react";
 import "./App.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Api from "./api/Api.jsx";
 import Header from "./Components/Header.jsx";
 import Footer from "./Components/Footer.jsx";
 import Home from "./Components/Home.jsx";
@@ -21,8 +20,6 @@ const App = () => {
           <Footer />
         </UserStorage>
       </BrowserRouter>
-
-      <Api />
     </div>
   );
 };
