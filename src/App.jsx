@@ -7,7 +7,7 @@ import Home from "./Components/Home.jsx";
 import Login from "./Components/Login/Login.jsx";
 import { UserStorage } from "./UserContext.jsx";
 
-const App = () => {
+function App() {
   return (
     <div>
       <BrowserRouter>
@@ -22,6 +22,6 @@ const App = () => {
       </BrowserRouter>
     </div>
   );
-};
+}
 
 export default App;
