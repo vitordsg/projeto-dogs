@@ -28,7 +28,7 @@ export const UserStorage = ({ children }) => {
     const response = await fetch(url, options);
     const json = await response.json();
     setData(json);
-    setLoading(true);
+    setLogin(true);
   }
 
   async function userLogin(username, password) {
@@ -66,6 +66,8 @@ export const UserStorage = ({ children }) => {
         } finally {
           setLoading(false);
         }
+      } else {
+        setLogin(false);
       }
     }
     autoLogin();
