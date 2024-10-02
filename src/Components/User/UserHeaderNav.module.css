@@ -14,7 +14,7 @@
   align-items: center;
   justify-content: center;
   border: 1px solid transparent;
-  transition: 0.6s;
+  transition: 0.6s ease-in-out;
   cursor: pointer;
 }
 
@@ -48,7 +48,7 @@
   align-items: center;
   justify-content: center;
   border: 1px solid transparent;
-  transition: 0.6s;
+  transition: 0.6s ease-in-out;
   cursor: pointer;
 }
 
@@ -60,7 +60,7 @@
   border-radius: 2px;
   background: currentColor;
   box-shadow: 0 6px currentColor, 0 -6px currentColor;
-  transition: 0.4s;
+  transition: 0.4s ease-in-out;
 }
 
 .mobileButton:focus,
@@ -117,6 +117,7 @@
 .navMobile a:hover svg > *,
 .navMobile button:hover svg > * {
   fill: #fb1;
+  transition: 0.3s ease-in-out;
 }
 
 .navMobile button {
