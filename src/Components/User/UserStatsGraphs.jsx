@@ -13,9 +13,7 @@ const UserStatsGraphs = ({ data }) => {
         y: Number(item.acessos),
       };
     });
-  }, []);
 
-  React.useEffect(() => {
     setTotal(
       data.map(({ acessos }) => Number(acessos)).reduce((a, b) => a + b, 0)
     );
@@ -27,7 +25,6 @@ const UserStatsGraphs = ({ data }) => {
       <div className={`${styles.total} ${styles.graphItem}`}>
         <p>Acessos: {total}</p>
       </div>
-
       <div className={styles.graphItem}>
         <VictoryPie
           data={graph}
@@ -42,7 +39,6 @@ const UserStatsGraphs = ({ data }) => {
           }}
         />
       </div>
-
       <div className={styles.graphItem}>
         <VictoryChart>
           <VictoryBar alignment="start" data={graph}></VictoryBar>
