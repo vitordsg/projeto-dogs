@@ -46,8 +46,17 @@ const Feed = ({ user }) => {
           setInfinite={setInfinite}
         />
       ))}
-
-      <FeedPhotos user={user} page="2" setModalPhoto={setModalPhoto} />
+      {!infinite && !user && (
+        <p
+          style={{
+            textAlign: "center",
+            padding: "2rem 0 4rem 0",
+            color: "#888",
+          }}
+        >
+          Não existem mais postagens.
+        </p>
+      )}
     </div>
   );
 };
