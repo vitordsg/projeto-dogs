@@ -33,7 +33,7 @@ const LoginPasswordLost = () => {
         <form onSubmit={handleSubmit}>
           <Input label="Email / Usuário" type="text" name="login" {...login} />
           {loading ? (
-            <Button disabled>Enviar Email</Button>
+            <Button disabled>Enviando...</Button>
           ) : (
             <Button>Enviar Email</Button>
           )}
